@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Mohanad Arafe | Welcome</title>
+          <link rel="stylesheet" href="./css/style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+  <body>
+    <header id="home">
+        <div class="head">
+          <h1>CENTRAL PROCESSING UNIT</h1>
+          <h3>Building a CPU from scratch</h3>
+        </div>
+        <nav>
+           <div class="menu-icon">
+              <i class="fa fa-bars fa-2x"></i>
+            </div>
+             <div class="logo">MOHANAD ARAFE</div>
+              <div class="menu">
+                  <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#portfolio">Portfolio</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                  </ul>
+              </div>
+        </nav>
+    </header>
+    <section id=idea>
+      <div class="container">
+        <h1>IDEA</h1>
+        <p>A central processing unit is the prime component of any computer.
+         It's role is to carry out any instructions of a computer program. In this
+        project, students are asked to design a CPU from scratch. The outcome of
+        this project will enable one to build a computer with a CPU
+        that can do simple instructions such as moving data from one register to
+         another and performing simple arithmetics.</p>
+         <p>With that in mind, this project will help one understand the importance
+         of the CPU in a modern computer. Also, this project helps improve skills
+         with breadboards & wiring. Let's jump into more details.</p>
+      </div>
+    </section>
+
+    <section id=topics>
+      <div class="container">
+        <h1>TOPICS COVERED</h1>
+        <p id=intro-p>There are six essential parts to building a CPU, let's
+        go through them briefly</p>
+        <div class="top-row">
+          <div class="box1">
+            <h3>BINARY & LOGIC GATES</h3>
+            <p>Before all, one needs to be comfortable with lab material & binary logic. Specifically, we look at commonly
+            used parts & logic functions.</p>
+          </div>
+          <div class="box2">
+            <h3>Timing Signal Generator</h3>
+            <p>The timing signal generator for the computer is a clock with a cycle that
+            repeats. It allows the computer the amount of time needed to perform operations.</p>
+          </div>
+          <div class="box3">
+            <h3>Arithmetic Unit & Program Counter</h3>
+            <p>In order to efficiently spread data throughout the breadboard, the data can be spread in a bus.
+            The program counter of a computer holds the location of an execution to be executed.</p>
+          </div>
+        </div>
+        <div class="bottom-row">
+          <div class="box4">
+            <h3>Data Registers & the MAR</h3>
+            <p>Data registers' main purpose is to hold data in order to ease manipulation and flow of data. The MAR is a
+               Memory Address Register which provides the address of the RAM for instructions.</p>
+          </div>
+          <div class="box5">
+            <h3>Program Memory</h3>
+            <p>Computer memory is a storage device conceived for the storing of multiple bits. For the experiments in this
+lab, Read Only Memory (ROM) is used.</p>
+          </div>
+          <div class="box6">
+            <h3>The Control Signal Generator</h3>
+            <p>The control signal generator is the portion of the project that allows the computer
+to execute functions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id=gallery>
+      <div class="container">
+        <h1>GALLERY</h1>
+        <div class="video">
+        <center>
+          <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/Ch2Av0qzXxQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p>The video above shows the functionality of the CPU. Initially, the PC starts
+          at a 0 and counts up to 15. In order to keep track of the count, the LED in the middle row (2nd row to the left)
+         flashes the count in binary. For example, when all four lights are led, the PC is at 15 (1111 in binary). This CPU
+       allows basic functions such as adding numbers and moving data around.</p>
+        </center>
+        </div>
+      </div>
+    </section>
+
+      <footer class="footer-distributed">
+        <div class="footer-right">
+          <a href="https://www.linkedin.com/in/mohanad-arafe-a9a51972/" target="_blank"><i class="fa fa-linkedin" id="linked"></i></a>
+          <a href="https://github.com/mohanadarafe" target="_blank"><i class="fa fa-github" id="git"></i></a>
+          <a href="https://www.instagram.com/mohanadarafe/" target="_blank"><i class="fa fa-instagram" id="insta"></i></a>
+        </div>
+
+        <div class="footer-left">
+          <p class="footer-links">
+            <a href="../index.html#home" id="hovHome">Home</a>
+            ·
+            <a href="../index.html#portfolio" id="hovPort">Portfolio</a>
+            ·
+            <a href="../index.html#contact" id="hovCont">Contact</a>
+          </p>
+          <p>Mohanad Arafe &copy; 2018</p>
+        </div>
+      </footer>
+
+  </body>
+
+    <script>
+    $(document).ready(function() {
+          $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+          });
+    });
+    $(window).on("scroll", function() {
+          if($(window).scrollTop()) {
+                $('nav').addClass('black');
+          }
+          else {
+                $('nav').removeClass('black');
+          }
+    })
+    </script>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Mohanad Arafe | Welcome</title>
+          <link rel="stylesheet" href="./css/style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+  <body>
+    <header id="home">
+        <div class="head">
+          <h1>WEB DEVELOPMENT</h1>
+          <h3>Website & Photoshop development</h3>
+        </div>
+        <nav>
+           <div class="menu-icon">
+              <i class="fa fa-bars fa-2x"></i>
+            </div>
+             <div class="logo">MOHANAD ARAFE</div>
+              <div class="menu">
+                  <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#portfolio">Portfolio</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                  </ul>
+              </div>
+        </nav>
+    </header>
+
+    <section id="website">
+      <div class="container">
+        <h1>WEB DEVELOPMENT</h1>
+        <p>Over the course of the year, a variety of establishments such as restaurants, insurance brokers & co have contacted
+           me to develop their website. Below, you can check out some of the websites I developed.</p>
+
+      <div class="project">
+      <!--WEB1-->
+         <div class="img-box">
+             <a href="CPU/cpu.html"><img src="../img/cpu.png"></a>
+             <div class="hovertext"><h3>Building a CPU</h3></div>
+        </div>
+      </div>
+      <!--WEB2-->
+      <div class="project">
+       <div class="img-box">
+         <a href="JSON/json.html"><img src="../img/JSON.png"></a>
+           <div class="hovertext"><h3>JSON Parsing</h3></div>
+        </div>
+      </div>
+      <!--WEB3-->
+      <div class="project">
+        <div class="img-box">
+          <a href="web/web.html"><img src="../img/photoshop.png"></a>
+          <div class="hovertext"><h3>Web & Photoshop</h3></div>
+        </div>
+     </div>
+    </section>
+
+    <section id="photoshop">
+      <div class="container">
+        <h1>PHOTOSHOP SERVICES</h1>
+        <p>Photoshop is a special tool for me since I have extensive experience with designs and artwork.
+        As for my work, I offer a variety of services such as weeding seating charts, menu's for restaurent's,
+        professional business cards and much more. Below you will find a collection of my favorite designs. </p>
+
+        <div class="design">
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="work">
+
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a href="https://www.linkedin.com/in/mohanad-arafe-a9a51972/" target="_blank"><i class="fa fa-linkedin" id="linked"></i></a>
+        <a href="https://github.com/mohanadarafe" target="_blank"><i class="fa fa-github" id="git"></i></a>
+        <a href="https://www.instagram.com/mohanadarafe/" target="_blank"><i class="fa fa-instagram" id="insta"></i></a>
+      </div>
+
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="../index.html#home" id="hovHome">Home</a>
+          ·
+          <a href="../index.html#portfolio" id="hovPort">Portfolio</a>
+          ·
+          <a href="../index.html#contact" id="hovCont">Contact</a>
+        </p>
+        <p>Mohanad Arafe &copy; 2018</p>
+      </div>
+    </footer>
+
+      <script>
+      // Menu-toggle button
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+      // Scrolling Effect
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      </script>

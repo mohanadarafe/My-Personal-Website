@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mohanad Arafe | Welcome</title>
+      <link rel="icon" href="./img/tabLogo.png">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./css/animate.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="js/wow.min.js"></script>
+</head>
+<body>
+      <header id="home">
+          <nav>
+             <div class="menu-icon lightSpeedIn animated">
+                <i class="fa fa-bars fa-2x"></i>
+              </div>
+               <div class="logo fadeIn animated">MOHANAD ARAFE</div>
+               <div class="menu lightSpeedIn animated" data-wow-delay="1s">
+                    <ul>
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#portfolio">Portfolio</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+              </div>
+          </nav>
+          <p class="line-1 anim-typewriter">hi, i'm mohanad</p>
+          <p class="line-2 anim-typewriter2">i do cool things with computers</p>
+          <div class="readMore wow fadeIn" data-wow-delay="5.7s">
+            <a href="#aboutme"><h3>Read More</h3></a>
+            <img src="./img/arrowDown.png" alt="Arrow Down">
+          </div>
+          <div class="location">griffith observatory, ca</div>
+      </header>
+
+      <section id="aboutme">
+      <div class="container">
+        <img src="./img/face.png" alt="Me" class="wow zoomIn" data-wow-delay="0.25s">
+        <p class="wow fadeIn">Welcome to my personal website! In here, you will find out everything about me. You can scroll down to discover more about my portfolio,
+         my weekly activities or ways to contact me. Before doing so, I shall briefly introduce myself! I am a 20 year old student studying at Concordia University in Montreal. Currently, I am in my
+          2nd year of education pursuing a Bachelors in Software Engineering. Up to now, my experience
+          has been wonderful. I meet great people that share similar interests, my network is growing day-by-day
+          and I learn things that interest me. The ultimate goal right now is to graduate and this website will
+          be used to explore everything I learn as I go. For my school assignments and personal projects, you can find
+          them in the <a href="#portfolio" class = "intro_link">portfolio</a> section. If you are ever interested in checking out my other social
+          etworks (GitHub, LinkedIn, etc...) or to contact me, you can go to the <a href="#contact" class = "intro_link">contacts</a> section.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+          <center>
+          <div class="container">
+            <h1 class="wow slideInLeft">SKILLS</h1>
+              <div class="boxes wow rubberBand" data-wow-delay="1s">
+                <img src="./img/java_logo.png" alt="Java Logo" width="60px">
+                <h3>JAVA</h3>
+                <p>2 years of experince in object-oriented programming with user interface & data structures</p>
+              </div>
+            <div class="boxes wow rubberBand" data-wow-delay="1s">
+              <img src="./img/html_logo.png" alt="HTML logo" width="80px">
+              <h3>WEB</h3>
+              <p>1 year of experince with HTML, CSS & back-end development used to develop this website</p>
+            </div>
+            <div class="boxes wow rubberBand" data-wow-delay="1s">
+              <img src="./img/photoshop_logo.png" alt="Photoshop logo" width="90px">
+              <h3>PHOTOSHOP</h3>
+              <p>7 years of experince in photoshop designs for youtube content creators & business affairs</p>
+            </div>
+          </div>
+        </center>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h1>MY WORK</h1>
+        <h2 id="below">Below you will find my favorite projects & school assignments</h2>
+          <!--CPU-->
+          <div class="project wow bounceIn">
+            <div class="img-box">
+                <a href="CPU/cpu.html"><img src="./img/cpu.png" alt="CPU image"></a>
+                <div class="hovertext"><h3>Building a CPU</h3></div>
+            </div>
+          </div>
+          <!--JAVA-->
+          <div class="project wow bounceIn">
+            <div class="img-box">
+              <a href="JSON/json.html"><img src="./img/JSON.png" alt="JSON image"></a>
+              <div class="hovertext"><h3>JSON Parsing</h3></div>
+            </div>
+          </div>
+          <!--PHOTOSHOP-->
+          <div class="project wow bounceIn">
+            <div class="img-box">
+              <a href="web/web.html"><img src="./img/photoshop.png" alt="Photoshop image"></a>
+              <div class="hovertext"><h3>Web & Photoshop</h3></div>
+            </div>
+          </div>
+          <h2 id="more">Want to see more? Check out my <a href="https://github.com/mohanadarafe" target="_blank" id="gitlink">GitHub</a> </h2>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <center>
+        <h1>LET'S BUILD TOGETHER</h1>
+        <p>If you need a website or any designs, feel free to contact me so we can design together! Also, if you see any bugs
+          in the website, please let me know so I can fix it. Otherwise, if you just want to talk, shoot me an email!
+          <form class="contact-form" action="contactform.php" method="post">
+            <input type="text" name="name" class="form-control" placeholder="Name" required><br>
+            <input type="email" name="email" class="form-control" placeholder="Email" required><br>
+            <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea><br>
+            <button type="submit" name="submit" class="form-control submit">SEND MESSAGE</button>
+          </form>
+        </center>
+      </div>
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a href="https://www.linkedin.com/in/mohanad-arafe-a9a51972/" target="_blank"><i class="fa fa-linkedin" id="linked"></i></a>
+        <a href="https://github.com/mohanadarafe" target="_blank"><i class="fa fa-github" id="git"></i></a>
+        <a href="https://www.instagram.com/mohanadarafe/" target="_blank"><i class="fa fa-instagram" id="insta"></i></a>
+      </div>
+
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="#home" id="hovHome">Home</a>
+          ·
+          <a href="#portfolio" id="hovPort">Portfolio</a>
+          ·
+          <a href="#contact" id="hovCont">Contact</a>
+        </p>
+        <p>Mohanad Arafe &copy; 2018</p>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+      // Scrolling Effect
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+    </script>
+    <script>
+          // Select all links with hashes
+          $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+              &&
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
+      </script>
+    <script>
+       new WOW().init();
+    </script>
+
+</body>
+</html>
