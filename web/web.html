@@ -5,15 +5,17 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <meta http-equiv="X-UA-Compatible" content="ie=edge">
           <title>Mohanad Arafe | Welcome</title>
+          <link rel="stylesheet" href="./css/lightbox.min.css">
           <link rel="stylesheet" href="./css/style.css">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
           <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+          <script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
     </head>
   <body>
     <header id="home">
         <div class="head">
           <h1>WEB DEVELOPMENT</h1>
-          <h3>Website & Photoshop development</h3>
+          <h3>Web & Photoshop artwork</h3>
         </div>
         <nav>
            <div class="menu-icon">
@@ -30,51 +32,53 @@
         </nav>
     </header>
 
-    <section id="website">
+    <section id="services">
       <div class="container">
-        <h1>WEB DEVELOPMENT</h1>
-        <p>Over the course of the year, a variety of establishments such as restaurants, insurance brokers & co have contacted
-           me to develop their website. Below, you can check out some of the websites I developed.</p>
-
-      <div class="project">
-      <!--WEB1-->
-         <div class="img-box">
-             <a href="CPU/cpu.html"><img src="../img/cpu.png"></a>
-             <div class="hovertext"><h3>Building a CPU</h3></div>
-        </div>
-      </div>
-      <!--WEB2-->
-      <div class="project">
-       <div class="img-box">
-         <a href="JSON/json.html"><img src="../img/JSON.png"></a>
-           <div class="hovertext"><h3>JSON Parsing</h3></div>
-        </div>
-      </div>
-      <!--WEB3-->
-      <div class="project">
-        <div class="img-box">
-          <a href="web/web.html"><img src="../img/photoshop.png"></a>
-          <div class="hovertext"><h3>Web & Photoshop</h3></div>
-        </div>
+        <h1>MY SERVICES</h1>
+        <p>Photoshop is a special tool for me since I have extensive experience with designs and artwork.
+        As for my work, I offer a variety of services such as weeding seating charts, menu's for restaurent's,
+        professional business cards and much more. Below you will find a collection of my favorite designs.</p>
+        <p>If you are interested in any artwork, you can shoot me a message in the <a href="../index.html#contact" class="contact_link">
+        contact me</a> section. We can discuss your needs & pricing.</p>
      </div>
     </section>
 
-    <section id="photoshop">
+    <section id="portfolio">
       <div class="container">
-        <h1>PHOTOSHOP SERVICES</h1>
-        <p>Photoshop is a special tool for me since I have extensive experience with designs and artwork.
-        As for my work, I offer a variety of services such as weeding seating charts, menu's for restaurent's,
-        professional business cards and much more. Below you will find a collection of my favorite designs. </p>
-
-        <div class="design">
-
+        <h1>ARTWORK</h1>
+        <h4>A collection of my favorite projects for clients</h4>
+        <div class="mygallery">
+          <a href="../img/photoshop.png" data-lightbox="mygallery"><img src="../img/photoshop.png" alt=""></a>
+          <a href="../img/cravoMenu.png" data-lightbox="mygallery" id="cravo"><img src="../img/crave.png" alt=""></a>
+          <a href="../img/yt.jpg" data-lightbox="mygallery"><img src="../img/ytbg.png" alt=""></a>
         </div>
-
+        <div class="top-row">
+          <div class="box-1">
+            <h3>BUSINESS CARDS</h3>
+            <p>I design custom business cards for anyone. In the past, I've done business cards
+            for insurance brokers, photographs & accountants. <a href="../index.html#contact" class="contact_link">Contact me</a> if you want to see more.</p>
+          </div>
+          <div class="box-2">
+            <h3>BUSINESS NEEDS</h3>
+            <p>Do you need a logo, menu, website or any marketing artwork to get your business running? I can get
+            your business up & running with all the visuals you need.</p>
+          </div>
+          <div class="box-3">
+            <h3>DIGITAL LIFE</h3>
+            <p>I have worked with multiple Youtubers for their banners, thumbnails & merchandise. If you are a Youtuber
+            & need new artwork, I can definitly help you!</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="work">
-
+    <section id="more">
+      <div class="container">
+        <h1>IS THAT IT?</h1>
+        <p>I have good news & bad news. The good news are that I can do more! The bad news is that you will have to come up with it.
+        I love to create and design new ideas. So, do not hesitate to come to me with your ideas and demands. We can work together
+        to find a solution to fulfill your needs.</p>
+      </div>
     </section>
 
     <footer class="footer-distributed">
@@ -96,20 +100,4 @@
       </div>
     </footer>
 
-      <script>
-      // Menu-toggle button
-      $(document).ready(function() {
-            $(".menu-icon").on("click", function() {
-                  $("nav ul").toggleClass("showing");
-            });
-      });
-      // Scrolling Effect
-      $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                  $('nav').addClass('black');
-            }
-            else {
-                  $('nav').removeClass('black');
-            }
-      })
-      </script>
+    <script src="../js/menu.js"></script>

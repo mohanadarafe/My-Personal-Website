@@ -12,7 +12,7 @@ body{
 header {
   width: 100%;
   height: 100vh;
-  background: url('../../img/photoshop.png');
+  background: url('../../img/psbg.jpg');
   background-size:cover;
   background-position: center;
 }
@@ -103,9 +103,9 @@ nav ul li a:hover{
 }
 
 .head{
-  background-color: rgba(159, 207, 241, 0.5);
+  background-color: rgba(218, 184, 155, 0.7);
   border-radius: 5px;
-  padding: 15px;
+  padding: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -118,98 +118,144 @@ nav ul li a:hover{
   font-family: Gravity;
   letter-spacing: 14px;
   text-align: center;
-  color: #f5f6fa;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
 }
 
 .head h3{
   font-family: Gravity;
   letter-spacing: 2px;
-  text-align: center;
   color: #f5f6fa;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/*----------------------- WEBSITE SECTION ---------------------*/
+/*----------------------- SERVICES SECTION ---------------------*/
 
-#website{
+#services{
   padding: 25px;
-  background-color: #94D0F4;
+  background-color: rgb(218, 184, 155);
 }
 
-#website h1{
+#services h1{
   font-size: 30px;
   font-weight: 400px;
   letter-spacing: 5px;
-  text-align: center;
+  text-align: left;
   color: #2D3539;
 }
 
-#website p{
+#services p{
   color: #2D3539;
   font-size: 20px;
   letter-spacing: 2.5px;
   padding-bottom: 25px;
-  text-align: center;
+  text-align: left;
 }
 
-.project {
-  display: inline-block;
-  width: 33.33%;
-  margin-right: -4px;
-    z-index: -1;
+.contact_link{
+  text-decoration: none;
+  color: #4a69bd;
 }
 
-.img-box {
-  padding: 20px;
-  position: relative;
+.contact_link:hover{
+  transition: 0.25s;
+  color: red;
 }
+/*----------------------- portfolio SECTION ---------------------*/
 
-.project img {
-  width: 100%;
-  display: block;
-  border-radius: 12px;
-}
-
-.img-box img:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  opacity: 0.5;
-}
-
-.img-box .hovertext {
-  font-size: 18px;
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.img-box:hover .hovertext {
-  display: block;
-}
-
-
-/*----------------------- PHOTOSHOP SECTION ---------------------*/
-
-#photoshop{
+#portfolio{
   padding: 25px;
   background-color: white;
 }
 
-#photoshop h1{
+#portfolio h1{
   font-size: 30px;
   font-weight: 400px;
   letter-spacing: 5px;
-  text-align: left;
-  color: #94D0F4;
+  text-align: center;
+  color: #2D3539;
 }
 
-#photoshop p{
-  color: #94D0F4;
+#portfolio h4{
+  color: #2D3539;
   font-size: 20px;
   letter-spacing: 2.5px;
   padding-bottom: 25px;
-  text-align: left;
+  text-align: center;
+}
+
+.mygallery{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.mygallery img{
+  padding: 15px;
+  transition: 1s;
+  width: 373px;
+  height: 256px;
+}
+
+.mygallery img:hover{
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.top-row{
+  display: flex;
+}
+
+.top-row > div {
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 33%;
+}
+
+.top-row h3{
+  letter-spacing: 0.25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.top-row p{
+  text-align: justify;
+  color: #282828;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/*----------------------- WHAT ELSE SECTION ---------------------*/
+
+#more{
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background: url('../../img/bg_web.jpg');
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 0% 8%;
+}
+
+#more h1{
+  font-size: 30px;
+  font-weight: 400px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 40px rgba(150, 150, 150, 1);
+}
+
+#more p{
+  color: white;
+  text-shadow: 0px 0px 40px rgba(150, 150, 150, 1);
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 
@@ -365,4 +411,49 @@ nav ul li a:hover{
 
       .project{
         width: 100%;
+      }
+
+      .top-row{
+        display: block;
+      }
+
+      .mygallery{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      .mygallery img{
+
+        transition: 1s;
+        width: 40vh;
+        height: 30vh;
+      }
+
+      #more{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: url('../../img/bg_web.jpg');
+        background-size:cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-position: 0% 8%;
+      }
+
+      #more h1{
+        font-size: 30px;
+        font-weight: 400px;
+        letter-spacing: 5px;
+        text-align: center;
+        color: white;
+        text-shadow: 0px 0px 40px rgba(150, 150, 150, 1);
+      }
+
+      #more p{
+        color: white;
+        text-shadow: 0px 0px 40px rgba(150, 150, 150, 1);
+        font-size: 20px;
+        letter-spacing: 2.5px;
+        padding-bottom: 25px;
+        text-align: center;
       }

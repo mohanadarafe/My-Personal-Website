@@ -18,7 +18,6 @@ header {
   z-index: 1;
 }
 
-
 .location{
   text-transform:uppercase;
   position:absolute;
@@ -247,6 +246,7 @@ nav ul li a:hover{
 }
 
 .intro_link:hover{
+  transition: 0.25s;
   color: red;
 }
 
@@ -323,6 +323,7 @@ nav ul li a:hover{
 }
 
 .img-box img:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: 0.5s;
   opacity: 0.5;
@@ -339,6 +340,7 @@ nav ul li a:hover{
 
 .img-box:hover .hovertext {
   display: block;
+  pointer-events:none; 
 }
 
 #more{
