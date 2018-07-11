@@ -11,14 +11,14 @@ $mail = new PHPMailer();
 
 $mail->isSMTP();
 $mail->Host = "smtp.gmail.com";
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465;
+$mail->SMTPSecure = "***";
+$mail->Port = ***;
 $mail->SMTPAuth = true;
-$mail->Username = 'mohanadarafework@gmail.com';
-$mail->Password = 'googlE91';
+$mail->Username = '*******@gmail.com';
+$mail->Password = '**********';
 
 $mail->setFrom($email, $name);
-$mail->addAddress('mohanadarafework@gmail.com');
+$mail->addAddress('***@gmail.com');
 $mail->Subject = $subject;
 $mail->Body = "You have received an email from ".$name.". \n\n".$msg;
 
